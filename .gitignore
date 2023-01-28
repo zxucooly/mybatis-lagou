@@ -7,4 +7,5 @@
 .DS_Store
 /target/
 MANIFEST.MF
-
+derby.log
+ibderby/
