@@ -156,6 +156,7 @@ public class Reflector {
                 name, method.getDeclaringClass().getName()))
                 : new MethodInvoker(method);
         getMethods.put(name, invoker);
+        // 获取方法返回的类型
         Type returnType = TypeParameterResolver.resolveReturnType(method, type);
         getTypes.put(name, typeToClass(returnType));
     }

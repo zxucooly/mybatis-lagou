@@ -6,7 +6,7 @@ import design.proxy.Subject;
 public class Main {
     public static void main(String[] args) {
         Subject subject = new RealSubject();
-        DemoInvokerHandler invokerHandler = 
+        DemoInvokerHandler invokerHandler =
             new DemoInvokerHandler(subject);
         // 获取代理对象
         Subject proxy = (Subject) invokerHandler.getProxy();
